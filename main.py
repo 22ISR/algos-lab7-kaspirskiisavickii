@@ -31,6 +31,7 @@
 
 Пример использования isPalindromString("Madam, Anna went to the civic center") # ["madam", "anna", "civic"]
 """
+
 """"
 def isPalindrom(word):
     cleaner_word = word.replace(" ", "").lower()
@@ -60,3 +61,38 @@ def isPalindromList(words):
     
 print(a)    
 print(isPalindromList(a))"""
+
+
+"""def punctuation(string):
+    punctuation = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
+    result = ""
+
+    for char in string:
+        if char not in punctuation:
+            result += char
+
+    return result
+
+def isPalindrom(words):
+    cleaner_word = words.replace(" ", "").lower()
+    reversed_word = cleaner_word[::-1]
+    return reversed_word == cleaner_word
+
+def isPalindromList(words):
+    palindroms = []
+    for word in words:
+        if isPalindrom(word):
+            palindroms.append(word)
+    return palindroms
+
+def isPalindromString(string):
+    clean_string = punctuation(string)
+    words = clean_string.split()
+    print(words)
+    palindromes = isPalindromList(words)
+    return palindromes
+
+print(isPalindromString("Madam, Anna went to the civic center"))"""
+
+
+
